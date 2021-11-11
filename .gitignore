@@ -1,0 +1,6 @@
+__pycache__
+.venv
+.vscode
+awscli-bundle
+pss
+zappa_settings.json

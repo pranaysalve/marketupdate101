@@ -26,7 +26,7 @@ sched.start()
 app = Flask(__name__)
 
 mongoClient = PyMongo(
-    app, uri="mongodb+srv://adminmarket:ijTcWFrKD7rkDgbW@marketupdate.schnd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE")
+    app, uri="URI")
 db = mongoClient.db
 
 print(db)
@@ -38,9 +38,9 @@ def updateData():
     # url = "http://localhost:3000/"
     # requests.get(url)
     try:
-        apiKey = "579b464db66ec23bdd000001f74eadc35b8f48dc74c432fa794eff02"
+        apiKey = "API KEY"
         datagovin = DataGovIndia(
-            "579b464db66ec23bdd000001f74eadc35b8f48dc74c432fa794eff02")
+            "API KEY")
         # datagovin.disable_multithreading()
 
         if datagovin.is_key_valid == True:
